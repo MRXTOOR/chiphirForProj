@@ -1,0 +1,58 @@
+/* Основные стили меню */
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Стили для кнопки бургера */
+
+.burger {
+    display: none;
+    /* Скрыть кнопку на больших экранах */
+    cursor: pointer;
+}
+
+
+/* Стили для списка ссылок */
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+
+/* Стили для отдельной ссылки */
+
+.link {
+    margin: 0 10px;
+}
+
+
+/* Медиа-запрос для показа кнопки бургера на маленьких экранах */
+
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+    }
+    .links {
+        display: none;
+        /* Скрыть список на маленьких экранах */
+    }
+    .menu.active .links {
+        display: flex;
+        /* Показать список при активной кнопке бургера */
+        flex-direction: column;
+        align-items: center;
+    }
+    .link {
+        margin: 10px 0;
+    }
+}
