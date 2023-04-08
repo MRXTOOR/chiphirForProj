@@ -1,3 +1,6 @@
+# Дальше идет вводная информация о react проекте и о том как его стартануть на вашей машине но мой задеплоенный код ввиде сайта вот 
+https://chiphir-for-proj.vercel.app/ благодяря Vercel
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
